@@ -5,6 +5,10 @@
 #include <string>
 #include <queue>
 #include "Expresion1.cpp"
+#include "Expresion2.cpp"
+#include "Expresion3.cpp"
+#include "Expresion4.cpp"
+#include "Expresion5.cpp"
 using namespace std;
 
 queue <char> cola1;
@@ -48,15 +52,28 @@ void separar_ingresar(string palabra) {
             cola1.push(c);
             cola2.push(c);
             cola3.push(c);
-
-            Expresion1 E1 = Expresion1(cola1);
-            E1.ejecutar();
         }
         else {
             cola4.push(c);
             cola5.push(c);
         }
+        cout << endl;
+
     }
+    Expresion1 E1 = Expresion1(cola1);
+    E1.ejecutar();
+
+    Expresion2 E2 = Expresion2(cola2);
+    E2.ejecutar();
+
+    Expresion3 E3 = Expresion3(cola3);
+    E3.ejecutar();
+
+    Expresion4 E4 = Expresion4(cola4);
+    E4.ejecutar();
+
+    Expresion5 E5 = Expresion5(cola5);
+    E5.ejecutar();
 }
 
 int main() {
