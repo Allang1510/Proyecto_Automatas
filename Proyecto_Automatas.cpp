@@ -77,7 +77,9 @@ void separar_ingresar(string palabra) {
 }
 
 int main() {
-    string nombreArchivo = "archivo.txt";  // Reemplaza con el nombre de tu archivo
+    string nombreArchivo; 
+    cout << "ingrese el nombre del archivo" << endl; 
+    cin >> nombreArchivo;
     vector<vector<string>> resultado = leerArchivoPorTabuladores(nombreArchivo);
 
     // Imprimir el contenido del archivo, separado por tabuladores
