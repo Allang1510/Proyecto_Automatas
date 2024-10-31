@@ -47,7 +47,6 @@ vector<vector<string>> leerArchivoPorTabuladores(const string& nombreArchivo) {
 
 void separar_ingresar(string palabra) {
     for (char c : palabra) {
-        cout << c << " "; // Imprime cada carácter seguido de un espacio
         if (isalpha(c)) {
             cola1.push(c);
             cola2.push(c);

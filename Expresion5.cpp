@@ -11,13 +11,13 @@ public:
 	}
 
 	void ejecutar() {
-		cout << "Expresion 5     ";
+		
 		Estado0();
 	}
 
 	void Estado0() {
 		if (Q.empty()) {
-			cout << "error" << endl;
+			cout << "";
 			return;
 		}
 		else {
@@ -27,14 +27,14 @@ public:
 				Estado1();
 			}
 			else {
-				cout << "cadena no valida" << endl;
+				cout << "";
 			}
 		}
 	}
 
 	void Estado1() {
 		if (Q.empty()) {
-			cout << "cadena no valida" << endl;
+			cout << "";
 			return;
 		}
 		else {
@@ -43,14 +43,14 @@ public:
 				Q.pop();
 				Estado2();
 			} else {
-				cout << "cadena no valida" << endl;
+				cout << "";
 			}
 		}
 	}
 
 	void Estado2() {
 		if (Q.empty()) {
-			cout << "cadena no valida" << endl;
+			cout << "";
 			return;
 		}
 		else {
@@ -59,14 +59,14 @@ public:
 				Q.pop();
 				Estado3();
 			} else {
-				cout << "cadena no valida" << endl;
+				cout << "";
 			}
 		}
 	}
 
 	void Estado3() {
 		if (Q.empty()) {
-			cout << "cadena no valida" << endl;
+			cout << "";
 			return;
 		}
 		else {
@@ -85,7 +85,7 @@ public:
 
 	void Estado4() {
 		if (Q.empty()) {
-			cout << "cadena no valida" << endl;
+			cout << "";
 			return;
 		}
 		else {
@@ -104,7 +104,7 @@ public:
 
 	void Estado5() {
 		if (Q.empty()) {
-			cout << "cadena no valida" << endl;
+			cout << "";
 			return;
 		}
 		else {
@@ -123,7 +123,7 @@ public:
 
 	void Estado6() {
 		if (Q.empty()) {
-			cout << "cadena no valida" << endl;
+			cout << "";
 			return;
 		}
 		else {
@@ -142,7 +142,7 @@ public:
 
 	void Estado7() {
 		if (Q.empty()) {
-			cout << "cadena no valida" << endl;
+			cout << "";
 			return;
 		}
 		else {
@@ -161,7 +161,7 @@ public:
 
 	void Estado8() {
 		if (Q.empty()) {
-			cout << "cadena no valida" << endl;
+			cout << "";
 			return;
 		}
 		else {
@@ -180,6 +180,7 @@ public:
 
 	void Estado9() {
 		if (Q.empty()) {
+			cout << "Expresion 5     ";
 			cout << "cadena valida" << endl;
 			return;
 		}
